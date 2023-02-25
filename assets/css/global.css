@@ -1,0 +1,59 @@
+/* <-------------------FONTS------------------->*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* <-------------------PAGE------------------->*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --primary-color: #04121F;
+    --primary-color-variant: #193652;
+    --secondary-color: #4599E9;
+    --tertiary-color: #42DB83;
+    --neutral-color-black: #0C0C0D;
+    --neutral-color-white: #fff;
+    --neutral-color-gray: #8A8A8A;
+    --bg-color: #eaf9fa;
+    --bg-gradient-main: linear-gradient(119.3deg, #80DE95 3.17%, #1A8BF3 110.55%);
+    --bg-gradient-secondary: linear-gradient(96.88deg, rgba(6, 28, 42, 0.71) -7.61%, rgba(6, 28, 42, 0.39) 96.42%);
+    --bg-gradient-tertiary: linear-gradient(126.32deg, #021E38 20.64%, #01050A 88.47%);
+    --bg-gradient-quaternary: linear-gradient(96.88deg, rgba(33, 120, 173, 0.71) -7.61%, rgba(65, 97, 117, 0.89) 96.42%);
+}
+
+.d-flex{
+    display: flex;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.align-start{
+    align-items: center;
+}
+
+.align-end{
+    align-items: center;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.justify-around{
+    justify-content: space-around;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.d-none{
+    display: none;
+}
