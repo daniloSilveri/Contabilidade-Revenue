@@ -1,0 +1,119 @@
+/*<-------------------HEADER-------------------> */
+
+.header{
+    position: fixed;
+    z-index: 1000;
+}
+
+/* HEADER:TOP BAR */
+
+.header__head--wrapper{
+    width: 100vw;
+    height: 58px;
+    z-index: 1000;
+}
+
+.header__head--top-bar{
+    width: 100%;
+    height: 100%;
+    padding: 0 48px;
+    border-bottom: 2px solid var(--neutral-color-gray);
+    background-color: var(--neutral-color-white);
+}
+
+.header__head--top-bar--p{
+    font-size: 16px;
+    color: var(--neutral-color-gray);
+}
+
+.header__head--top-bar-nav{
+    width: 160px;
+}
+
+.header__head--top-bar-nav-ul{
+    width: 10rem;
+    list-style: none;
+}
+
+.header__head--top-bar-nav-ul-img{
+    height: 20px;
+    width: 20px;
+    border-radius: 4px;
+    filter: grayscale(1);
+    transition: all .15s ease-in-out;
+}
+
+/* HEADER:BOTTOM BAR */
+
+.header-scrolled{
+    animation-name:change-background;
+    animation-duration: .9s;
+    animation-fill-mode: forwards;
+} 
+
+@keyframes change-background {
+    0% {background-color: transparent;}
+    100% {background-color: var(--primary-color);}
+}
+
+.header__container{
+    max-width: 100vw;
+    height: 80px;
+    padding: 0 48px;
+}
+
+.header__container--img{
+    height: 32px;
+}
+
+.header__container--nav{
+    gap: 40px;
+}
+
+.header__container--nav-a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--neutral-color-white);
+}
+
+.header__container--btn{
+    height: 48px;
+    width: 166px;
+    padding: 0 .4rem;
+    border-radius: 12px;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--neutral-color-white);
+    background: var(--bg-gradient-main);
+    transition: all .3s ease-in-out;
+}
+
+.header__container--btn img{
+    height: 1.5rem;
+    transition: all .3s ease-in-out;
+}
+
+/*<-------------------HOVER-------------------> */
+
+.header__head--top-bar-nav-ul-img:hover{
+    cursor: pointer;
+    filter: none;
+}
+
+.header__container--nav-a:hover{
+    cursor: pointer;
+    background: linear-gradient(119.3deg, #80DE95 3.17%, #1A8BF3 110.55%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent
+}
+
+.header__container--btn:hover{
+    cursor: pointer;
+    background-color: var(--tertiary-color);
+    box-shadow:inset 30px 30px 30px 50px rgba(3, 163, 83, 0.514);
+}

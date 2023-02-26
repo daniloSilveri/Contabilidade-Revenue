@@ -35,11 +35,11 @@
 }
 
 .align-start{
-    align-items: center;
+    align-items: flex-start;
 }
 
 .align-end{
-    align-items: center;
+    align-items: flex-end;
 }
 
 .justify-center{
@@ -52,6 +52,10 @@
 
 .justify-between{
     justify-content: space-between;
+}
+
+.justify-start{
+    justify-content: flex-start;
 }
 
 .d-none{
