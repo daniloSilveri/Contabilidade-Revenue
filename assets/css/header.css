@@ -2,6 +2,7 @@
 
 .header{
     position: fixed;
+    max-width: 100vw;
     z-index: 1000;
 }
 
@@ -105,6 +106,7 @@
 
 .header__container--nav-a:hover{
     cursor: pointer;
+    font-weight: 400;
     background: linear-gradient(119.3deg, #80DE95 3.17%, #1A8BF3 110.55%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
