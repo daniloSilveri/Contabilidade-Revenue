@@ -181,6 +181,119 @@
     transition: all .4s ease;
 }
 
+/* ----------------------SECTION EXPERTISES---------------------- */
+
+.section__expertises{
+    flex-direction: column;
+    max-width: 100vw;
+    height: 900px;
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+.section__expertises--h2{
+    font-size: 28px;
+    font-weight: 300;
+    text-align: center;
+    color: var(--primary-color-variant);
+}
+
+.section__expertises--h2 span{
+    background: linear-gradient(119.3deg, #80DE95 3.17%, #1A8BF3 110.55%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent
+}
+
+.section__expertises--container{
+    width: 90%;
+}
+
+.section__expertises--left-collumn{
+    position: relative;
+    width: 510px;
+    height: 588px;
+}
+
+.section__expertises--left-collumn-img{
+    width: 398px;
+    height: 555px;
+    border-radius: 12px;
+    z-index: 3;
+}
+
+.section__expertises--left-collumn-img-detail{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 204px;
+    height: 204px;
+    z-index: 2;
+}
+
+.section__expertises--left-collumn-detail{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    right: -10px;
+    top: 127px;
+    border-radius: 100%;
+    background-color: var(--tertiary-color);
+    z-index: 1;
+}
+
+.section__expertises--left-collumn-title{
+    position: absolute;
+    height: 40px;
+    width: fit-content;
+    bottom: 40px;
+    left: 70px;
+    color: var(--neutral-color-white);
+    z-index: 4;
+}
+
+.section__expertises--collumn{
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 250px 250px;
+    width: 641px;
+    padding: 28px;
+}
+
+.section__expertises--collumn-item{
+    flex-direction: column;
+    gap: 18px;
+    margin: 16px;
+    padding: 10px;
+}
+
+.section__expertises--collumn-item-img{
+    width: 50px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: var(--secondary-color);
+}
+
+.section__expertises--collumn-item-img img{
+    height: 30px;
+    width: 30px;
+}
+
+.section__expertises--collumn-item h3{
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: var(--neutral-color-gray);
+}
+
+.section__expertises--collumn-item p {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--primary-color);
+}
+
 /* ----------------------HOVER---------------------- */
     
 .section__hero--btn:hover {
