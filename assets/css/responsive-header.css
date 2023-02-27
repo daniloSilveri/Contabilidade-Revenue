@@ -4,15 +4,16 @@
 /*<-------------------HEADER-------------------> */
 
 @media screen and (max-width: 1024px) {
-    
+
     .header__mobile--wrapper{
         height: 80px;
+        width: 100vw;
     }
 
     .header__mobile{
         position: relative;
         flex-direction: column;
-        width: 100vw;
+        width: 100%;
         height: 100%;
         background-color: var(--neutral-color-white);
     }
@@ -52,6 +53,7 @@
         font-size: 16px;
         font-weight: 400;
         color: var(--neutral-color-gray);
+        background-color: var(--neutral-color-white);
     }
 
     .header__mobile--nav-a:nth-child(1){
