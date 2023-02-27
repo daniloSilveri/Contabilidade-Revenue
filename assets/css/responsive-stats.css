@@ -1,0 +1,35 @@
+
+@media screen and (max-width: 768px) {
+    .section__stats{
+        height: fit-content;
+        padding: 60px 0;
+    }
+
+    .section__stats--container{
+        height: fit-content;
+        gap: 24px;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .section__stats--container{
+        height: fit-content;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .section__stats--item h3{
+        font-size: 48px;
+    }
+    
+    .section__stats--item p{
+        font-size: 20px;
+    }
+    
+    .section__numbers--info-span{
+        font-size: 28px;
+    }
+}
+    
