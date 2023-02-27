@@ -409,6 +409,50 @@
     animation: animate-bg 6s infinite alternate;
 }
 
+/* ----------------------SECTION STATS---------------------- */
+
+.section__stats{
+    flex-direction: column;
+    max-width: 100vw;
+    height: 320px;
+    background-color: var(--neutral-color-white);
+}
+
+.section__stats--container{
+    width: 90%;
+    height: 120px;
+    gap: 5%;
+    color: var(--neutral-color-gray);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.section__stats--item{
+    flex-direction: column;
+    width: fit-content;
+    height: 90px;
+}
+
+.section__stats--item h3{
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.section__stats--item p{
+    width: 130px;
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.section__numbers--info-span{
+    font-size: 28px;
+    font-weight: 500;
+    margin: 0 5px;
+    color: var(--tertiary-color);
+}
+
+
 /* ----------------------HOVER---------------------- */
     
 .section__hero--btn:hover {
