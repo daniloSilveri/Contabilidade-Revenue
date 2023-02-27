@@ -83,6 +83,104 @@
     height: 100%;
 }
 
+/* ----------------------SECTION STEPS---------------------- */
+
+.section__steps{
+    flex-direction: column;
+    position: relative;
+    max-width: 100vw;
+    height: 705px;
+    padding: 60px 0;
+    background-color: var(--bg-color);
+}
+
+.section__steps--h2{
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--primary-color-variant);
+}
+
+.section__steps--h2 span{
+    background: linear-gradient(119.3deg, #80DE95 3.17%, #1A8BF3 110.55%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent
+}
+
+.section__steps--container{
+    position: relative;
+    width: 90%;
+    gap: 32px;
+}
+
+.section__steps--progress-bar{
+    position: absolute;
+    top: 253px;
+    height: 10px;
+    width: 73%;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.384);
+    z-index: 0;
+}
+
+.section__steps--box{
+    justify-items: flex-start;
+    flex-direction: column;
+    width: 300px;
+    height: 250px;
+    gap:16px;
+    z-index: 1;
+}
+
+.section__steps--box-head{
+    width: 50px;
+    height: 50px;
+    background: var(--primary-color);
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 100%;
+}
+
+.section__steps--box-head p{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38px;
+    text-align: center;
+    color: var(--neutral-color-white);
+}
+
+.section__steps--box-h3{
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--primary-color-variant);
+}
+
+.section__steps--box-p{
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: var(--neutral-color-gray);
+}
+
+.section__steps--box:nth-child(4) .section__steps--box-head {
+    background: var(--bg-gradient-main);
+    box-shadow: 0px 0px 20px 11px rgba(43, 187, 144, 0.3);
+}
+
+.section__steps--btn{
+    width: 300px;
+    height: 48px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--tertiary-color);
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: var(--neutral-color-white);
+    transition: all .4s ease;
+}
+
 /* ----------------------HOVER---------------------- */
     
 .section__hero--btn:hover {
@@ -96,4 +194,10 @@
     position: absolute;
     right: 0;
     padding-right: 1rem;
+}
+
+.section__steps--btn:hover{
+    cursor: pointer;
+    background-color: #71c684;
+    box-shadow: inset 5px 5px 20px rgba(92, 84, 84, 0.288);
 }
