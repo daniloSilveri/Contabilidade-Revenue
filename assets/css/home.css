@@ -452,6 +452,51 @@
     color: var(--tertiary-color);
 }
 
+/* ----------------------SECTION BANNER---------------------- */
+
+.section__banner{
+    flex-direction: column;
+    height: 240px;
+    max-width: 100vw;
+    padding: 0 40px;
+    gap: 20px;
+    background-image: url(../img/join-us.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.section__banner h3{
+    width: 468px;
+    height: 76px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: var(--neutral-color-white);
+}
+
+.section__banner span {
+    background: linear-gradient(119.3deg, #80DE95 3.17%, #1A8BF3 110.55%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent
+}
+
+.section__banner--btn {
+    width: 280px;
+    height: 48px;
+    border: 1px solid #FFFFFF;
+    border-radius: 12px;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 0 2rem;
+    color: var(--neutral-color-white);
+    background: var(--bg-gradient-secondary);
+    transition: all .4s ease-in-out;
+}
+
 
 /* ----------------------HOVER---------------------- */
     
@@ -484,6 +529,12 @@
     transform: scale(1.05);
     border: 1px solid rgba(255, 255, 255, 0.356);
     box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.11);
+}
+
+.section__banner--btn:hover {
+    width: 400px;
+    background-color: #ffffff3a;
+    cursor: pointer;
 }
 
 /*<-------------------ANIMATION-------------------> */

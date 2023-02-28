@@ -1,0 +1,21 @@
+
+@media screen and (max-width: 768px) {
+    
+    .section__banner{
+        height: fit-content;
+        padding: 60px 20px;
+    }
+    
+    .section__banner h3{
+        font-size: 24px;
+        width: 90%;
+    }
+
+    .section__banner--btn{
+        margin-top: 24px;
+    }
+
+    .section__banner--btn:hover {
+        width: 280px;
+    }
+}
