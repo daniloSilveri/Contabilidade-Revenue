@@ -1,0 +1,36 @@
+
+@media screen and (max-width: 768px) {
+    .footer{
+        flex-direction: column;
+        height: fit-content;
+        padding: 60px 0;
+    }
+
+    .footer__social{
+        height: fit-content;
+        width: 70%;
+        align-items: flex-start;
+        margin-bottom: 80px;
+    }
+
+    .footer__nav{
+        flex-direction: column;
+        gap: 80px;
+    }
+
+    .footer__nav--contact{
+        width: 100%;
+        height: fit-content;
+    }
+
+    .footer__nav--company{
+        width: 100%;
+        height: fit-content;
+    }
+
+    .footer__nav--jobs{
+        width: 100%;
+        height: fit-content;
+        margin-bottom: 80px;
+    }
+}

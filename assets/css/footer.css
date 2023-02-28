@@ -1,0 +1,132 @@
+/* *<-------------------FOOTER-------------------> */ 
+
+.footer{
+    position: relative;
+    max-width: 100vw;
+    height: 400px;
+    background-color: var(--primary-color);
+}
+
+.footer__social{
+    flex-direction: column;
+    gap: 32px;
+    height: 280px;
+    width: 200px;
+}
+
+.footer__logo{
+    flex-direction: column;
+    gap: 8px;
+    width: 195px;
+    height: 62px;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--neutral-color-white);
+}
+
+.footer__logo img{
+    height: 44px;
+    width: auto;
+}
+
+.footer__social-medias{
+    gap: 12px;
+}
+
+.footer__nav{
+    width: 70%;
+    gap: 10px;
+}
+
+.footer__nav--contact{
+    height: 280px;
+    width: 330px;
+}
+
+.footer__nav--title{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: var(--neutral-color-white);
+    margin-bottom: 32px;
+}
+
+.footer__nav--contact-links{
+    flex-direction: column;
+    gap: 16px;
+    height: 100px;
+}
+
+.footer__nav--contact-link{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.footer__nav--contact-link img{
+    width: 18px;
+    height: 20px;
+}
+
+.footer__nav--p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--neutral-color-gray);
+}
+
+.footer__nav--company{
+    height: 280px;
+    width: 220px;
+}
+
+.footer__nav--company-p{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer__nav--jobs{
+    height: 280px;
+    width: 220px;
+}
+
+.footer__nav--btn{
+    margin-top: 16px;
+    padding: 13px 29px;
+    width: 160px;
+    height: 44px;
+    border: 1px solid var(--neutral-color-gray);
+    border-radius: 8px;
+    background-color: transparent;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--neutral-color-gray);
+}
+
+.footer--bottom-bar{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background: #030A11;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: var(--neutral-color-white);
+}
+
+/* -------------------------HOVER---------------- */
+
+:where(.footer__nav--contact-links p, .footer__nav--p, .footer button ):hover{
+    cursor: pointer;
+    color: var(--secondary-color);
+}
+
+.footer button:hover{
+    border: 1px solid var(--secondary-color);;
+}
+:where(.footer img, .footer__nav--title):hover{
+    cursor: pointer;
+}
