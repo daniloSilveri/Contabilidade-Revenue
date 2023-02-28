@@ -892,6 +892,18 @@
     border: 1px solid var(--secondary-color);
     color: var(--secondary-color);
 }
+
+.section__cta--btn1:hover{
+    cursor: pointer;
+    background-color: #afd3f5cb;
+}
+
+.section__cta--btn2:hover{
+    cursor: pointer;
+    background-color: #67bb79;
+    border: none;
+    color: var(--neutral-color-white);
+}
 /*<-------------------ANIMATION-------------------> */
 
 
