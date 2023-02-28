@@ -7,9 +7,10 @@
 
     .section__services--title{ 
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         width: 100%;
         padding-left: 15px;
+        text-align: center;
     }
 
     .section__services--title-text{
@@ -18,10 +19,13 @@
 
     .section__services--title-text h2 {
         font-size: 28px;
+        width: 100%;
+        margin-bottom: 10px;
     }
     
     .section__services--title-text p {
         font-size: 14px;
+        margin-bottom: 10px;
     }
 
     .section__services--cards{
