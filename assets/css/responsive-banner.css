@@ -3,7 +3,8 @@
     
     .section__banner{
         height: fit-content;
-        padding: 60px 20px;
+        padding: 60px 0;
+        align-items: center;
     }
     
     .section__banner h3{
