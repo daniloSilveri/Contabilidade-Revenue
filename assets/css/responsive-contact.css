@@ -1,0 +1,17 @@
+@media screen and (max-width: 768px) {
+    
+    .contact{
+        display: none;
+    }
+
+    .contact__whatsapp{
+        height: 52px;
+        width: 52px;
+        right: 20px;
+    }
+
+    .contact__whatsapp img {
+        height: 32px;
+        width: 36px;
+    }
+}
