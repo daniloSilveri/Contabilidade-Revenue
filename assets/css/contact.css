@@ -1,0 +1,240 @@
+/*<-------------------CONTACT-------------------> */
+
+.contact {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 12px;
+    position: absolute;
+    position: fixed;
+    bottom: 130px;
+    right: 50px;
+    z-index: 1000;
+}
+
+.contact__whatsapp {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    height: 63px;
+    width: 63px;
+    border-radius: 100%;
+    box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.164);
+    background-color: var(--tertiary-color);
+    z-index: 1000;
+    animation: animate .7s ease-in-out infinite alternate;
+}
+
+.contact__consultant {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: fit-content;
+    gap: 12px;
+}
+
+.contact__consultant--message{
+    position: relative;
+    width: 250px;
+    height: 60px;
+    gap: 10px;
+    border-radius: 12px 12px 0 12px;
+    padding: 8px 8px 8px 16px;
+    background-color: var(--neutral-color-white);
+    box-shadow: 10px 10px 10px rgba(85, 78, 78, 0.267);
+}
+
+.contact__consultant--close{
+    cursor: pointer;
+    position: absolute;
+    top: -20px;
+    right: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    border-radius: 100%;
+    background-color: var(--secondary-color);
+}
+
+.contact__consultant--close img{
+    width: 9px;
+    height: 9px;
+}
+
+.contact__consultant--message span{
+    font-weight: 600;
+    color: rgb(71, 68, 68);
+}
+
+.contact__consultant--photo {
+    height: 63px;
+    width: 63px;
+    position: relative;
+    border-radius: 100%;
+    background-image: url(../img/consultant-photo.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.164);
+}
+
+.contact__photo--online{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 16px;
+    width: 16px;
+    border-radius: 100%;
+    background-color: var(--tertiary-color);
+}
+
+/*<-------------------CONTACT ICONS--chatbox-------------------> */
+
+/* HEADER */
+
+.chatbox{
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+    border-radius: 12px;
+    background-color: var(--neutral-color-white);
+    z-index: 2000;
+    box-shadow: 10px 10px 20px rgba(128, 128, 128, 0.288);
+}
+
+.chatbox__header{
+    width: 100%;
+    height: 60px;
+    padding: 0 1rem;
+    border-radius: 12px 12px 0 0;
+    background-color: var(--secondary-color);
+}
+
+.chatbox__header--photo{
+    position: relative;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    background-image: url(../img/consultant-photo.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.chatbox__header--online{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    background: var(--tertiary-color);
+}
+
+.chatbox__header--status{
+    flex-grow: 1;
+    margin-left: 10px;
+    color: var(--neutral-color-white);
+}
+
+.chatbox__header--status p:nth-child(1){
+    font-weight: 400;
+}
+.chatbox__header--status p:nth-child(2){
+    margin-top: 2px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.chatbox__header--close-tab{
+    display: flex;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    border: 1px solid var(--neutral-color-white);
+}
+
+.chatbox__header--close-tab img {
+    width: 10px;
+}
+
+.display-none{
+    display: none;
+}
+
+.display-flex{
+    display: flex;
+}
+
+/* BODY */
+.chatbox__body{
+    flex-grow: 1;
+    padding: 1rem;
+}
+
+.chatbox__body--messages{
+    width: 80%;
+    padding: 8px 12px;
+    border-radius: 8px 8px 8px 0;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgb(58, 57, 57);
+    background-color: rgb(234, 236, 236);
+}
+
+/* FOOTER */
+.chatbox__footer{
+    width: 90%;
+    height: 60px;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+    border: 2px solid var(--secondary-color);
+    border-radius: 20px;
+    background-color: var(--neutral-color-white);
+}
+
+.chatbox__footer input{
+    width: 80%;
+    height: 50%;
+    border: none;
+    background-color: var(--neutral-color-white);
+}
+
+.chatbox__footer input::placeholder{
+    font-size: 14px;
+    padding-left: 4px;
+}
+
+.chatbox__footer input:focus{
+    outline: none;
+}
+
+.chatbox__footer button {
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 100%;
+    background-color: rgb(186, 184, 184);
+}
+
+
+/*<-------------------CONTACT ICONS:hover-------------------> */
+
+:where(.contact__consultant--message,.contact__consultant--photo,.contact__photo--online, .chatbox__header--close-tab, .chatbox__footer button):hover{
+    cursor: pointer;
+}
+
+.chatbox__header--close-tab:hover{
+    background-color: rgba(226, 239, 250, 0.562);
+}
+
+/*<-------------------ANIMATION-------------------> */
+@keyframes animate {
+    to{
+        transform: scale(1.05);
+    }
+}
